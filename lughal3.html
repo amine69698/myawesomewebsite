@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملخص دروس اللغة العربية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            direction: rtl;
+        }
+        header {
+            background-color: #004d40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .container {
+            margin-top: 100px;
+            padding: 20px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .unit-section {
+            background-color: #ffffff;
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-left: 5px solid #004d40;
+            transition: box-shadow 0.3s ease;
+        }
+        .unit-section:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .unit-header {
+            background-color: #004d40;
+            color: #fff;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .unit-header:hover {
+            background-color: #003d33;
+        }
+        .unit-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+            opacity: 0;
+            background-color: #fafafa;
+            padding: 0 10px;
+        }
+        .unit-content ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .unit-content li {
+            margin: 10px 0;
+        }
+        .unit-content a {
+            display: block;
+            color: #004d40;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .unit-content a:hover {
+            background-color: #004d40;
+            color: #ffffff;
+        }
+        footer {
+            background-color: #004d40;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ملخص دروس اللغة العربية</h1>
+    </header>
+
+    <div class="container">
+        <!-- Section for المجزوءة 1 -->
+        <div class="unit-section">
+            <div class="unit-header" onclick="toggleContent('content-m1')">
+                المجزوءة 1 : أنواع الخطاب (الإشهاري - الصحفي - السياسي)
+            </div>
+            <div class="unit-content" id="content-m1">
+                <ul>
+                    <li><a href="pdf1.pdf" target="_blank">درس النصوص 1-1 : الخطاب الإشهاري</a></li>
+                    <li><a href="pdf2.pdf" target="_blank">درس النصوص 1-2 : الخطاب الصحفي</a></li>
+                    <li><a href="pdf3.pdf" target="_blank">درس النصوص 1-3 : الخطاب السياسي</a></li>
+                    <li><a href="pdf4.pdf" target="_blank">الدرس اللغوي 1-1</a></li>
+                    <li><a href="pdf5.pdf" target="_blank">الدرس اللغوي 1-2 : العدد</a></li>
+                    <li><a href="pdf6.pdf" target="_blank">درس التعبير والإنشاء 1 : مهارة تحليل صورة</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section for المجزوءة 2 -->
+        <div class="unit-section">
+            <div class="unit-header" onclick="toggleContent('content-m2')">
+                المجزوءة 2 : قضايا معاصرة
+            </div>
+            <div class="unit-content" id="content-m2">
+                <ul>
+                    <li><a href="pdf7.pdf" target="_blank">درس النصوص 2-1 : الإنسان والتنمية</a></li>
+                    <li><a href="pdf8.pdf" target="_blank">درس النصوص 2-2 : الإنسان والتكنولوجيا</a></li>
+                    <li><a href="pdf9.pdf" target="_blank">درس النصوص 2-3 : الإنسان ومشاكل الهجرة</a></li>
+                    <li><a href="pdf10.pdf" target="_blank">الدرس اللغوي 2-1 : الأمر</a></li>
+                    <li><a href="pdf11.pdf" target="_blank">الدرس اللغوي 2-2 : النهي</a></li>
+                    <li><a href="pdf12.pdf" target="_blank">الدرس اللغوي 2-3 : الاستفهام</a></li>
+                    <li><a href="pdf13.pdf" target="_blank">الدرس اللغوي 2-4 : التمني</a></li>
+                    <li><a href="pdf14.pdf" target="_blank">درس التعبير والإنشاء 2 : مهارة توسيع فكرة</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section for المجزوءة 3 -->
+        <div class="unit-section">
+            <div class="unit-header" onclick="toggleContent('content-m3')">
+                المجزوءة 3 : المفاهيم (الحداثة - التواصل - الإبداع)
+            </div>
+            <div class="unit-content" id="content-m3">
+                <ul>
+                    <li><a href="pdf15.pdf" target="_blank">درس النصوص 3-1 : مفهوم الحداثة</a></li>
+                    <li><a href="pdf16.pdf" target="_blank">درس النصوص 3-2 : مفهوم التواصل</a></li>
+                    <li><a href="pdf17.pdf" target="_blank">درس النصوص 3-3 : مفهوم الإبداع</a></li>
+                    <li><a href="pdf18.pdf" target="_blank">الدرس اللغوي 3-1 : المصادر</a></li>
+                    <li><a href="pdf19.pdf" target="_blank">الدرس اللغوي 3-2 : النسبة</a></li>
+                    <li><a href="pdf20.pdf" target="_blank">درس التعبير والإنشاء 3 : مهارة الربط بين الأفكار</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section for المجزوءة 4 -->
+        <div class="unit-section">
+            <div class="unit-header" onclick="toggleContent('content-m4')">
+                المجزوءة 4 : قيم إنسانية في الشعر العربي
+            </div>
+            <div class="unit-content" id="content-m4">
+                <ul>
+                    <li><a href="pdf21.pdf" target="_blank">درس النصوص 4-1 : التضامن</a></li>
+                    <li><a href="pdf22.pdf" target="_blank">درس النصوص 4-2 : التسامح</a></li>
+                    <li><a href="pdf23.pdf" target="_blank">درس النصوص 4-3 : الجمال</a></li>
+                    <li><a href="pdf24.pdf" target="_blank">الدرس اللغوي 4-1 : الاستعارة وأركانها</a></li>
+                    <li><a href="pdf25.pdf" target="_blank">الدرس اللغوي 4-2 : الطباق والمقابلة</a></li>
+                    <li><a href="pdf26.pdf" target="_blank">درس التعبير والإنشاء 4 : مهارة المقارنة والاستنتاج</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                content.style.opacity = 0;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.style.opacity = 1;
+            }
+        }
+    </script>
+</body>
+</html>

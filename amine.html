@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is my website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background: url('https://www.edgeip.com/images/FCK/Image/201812/Applying-to-university-college.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 6em;
+            color: #FF6347; /* Tomato color */
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            margin: 0;
+            background: linear-gradient(45deg, #FF6347, #FFD700, #32CD32);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .button {
+            display: block;
+            padding: 20px 40px;
+            font-size: 28px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            text-align: center;
+            margin: 20px;
+            cursor: pointer;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .button::after {
+            content: '→';
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #fff;
+        }
+        .button:hover {
+            background-color:#2C293Aff ;
+            transform: scale(1.05);
+        }
+        .button.jihawi {
+            background-color: #2C293Aff;
+        }
+        .button.jihawi:hover {
+            background-color: rgb(46, 42, 62);
+        }
+        .tools {
+            position: absolue;
+            bottom: 240px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 50px;
+        }
+        .tools .tool {
+            display: inline-block;
+            width: 140px;
+            height: 140px;
+            background-color: #FFC107;
+            color: #fff;
+            border-radius: 50%;
+            line-height: 140px;
+            text-align: center;
+            font-size: 24px;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .tools .tool:hover {
+            background-color: #ff9800;
+            transform: scale(1.05);
+        }
+        .tools .left {
+            margin-right: auto;
+        }
+        .tools .right {
+            margin-left: auto;
+        }
+        .motivation {
+            margin-top: auto;
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+        .motivation h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>مرحبا!</h1>
+    <div class="button-container">
+        <a href="stem.html" class="button">stem Subjects</a>
+        <a href="jihawi.html" class="button jihawi">مواد الجهوي</a>
+    </div>
+    <div class="tools">
+        <a href="calculator-notes.html" class="tool left">gradecalculator</a>
+        <a href="https://massarservice.men.gov.ma/" class="tool left">massar</a>
+        <a href="https://www.revisely.com/flashcard-generator" class="tool right">flashcards</a>
+        <a href="https://www.taskade.com/generate/ai/study-schedule" class="tool right">schedules</a>
+    </div>
+    <div class="motivation">
+        <h2>مرحباً في مركز دراستنا!</h2>
+        <p>هنا، ستجد مجموعة كبيرة من الموارد لمساعدتك في التفوق في امتحاناتك. ابقَ متحمسًا واستمر في السعي نحو النجاح. معًا، يمكننا تحقيق نتائج رائعة!</p>
+    </div>
+
+   
+</body>
+</html>

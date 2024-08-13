@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM Subjects</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: url('https://online-learning-college.com/wp-content/uploads/2022/12/What-are-STEM-Subjects-scaled.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            overflow: hidden;
+            animation: linear 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .big-square, .rectangle, .small-square {
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            text-decoration: none;
+            opacity: 0;
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .lessons {
+            width: 45%;
+            height: 300px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk22C_hiurle_31bZTjtzPsKf9461oftSEhg&s);
+            animation-delay: 0.2s;
+        }
+        .practice-exams {
+            width: 45%;
+            height: 300px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwtFfVuWhFqDeClNok01vNLL0xqYhkF_NXvA&s);
+            animation-delay: 0.4s;
+        }
+        .rectangle {
+            width: 70%;
+            height: 150px;
+            background-color: #1976d2; /* Royal blue */
+            position: relative;
+            margin-top: auto; /* Position it lower */
+            margin-bottom: 20px;
+            animation-delay: 0.6s;
+        }
+        .rectangle img {
+            position: absolute;
+            top: -35px;
+            border-radius: 50%;
+            border: 5px solid rgb(15, 5, 5);
+            width: 80px;
+            height: 80px;
+            background-image:src="pnnf.png";
+        }
+        .small-square {
+            width: 60%;
+            height: 150px;
+            background-color: aqua;
+            margin-top: auto; /* Position it lower */
+            margin-bottom: 20px;
+            animation-delay: 0.8s;
+        }
+        .big-square:hover, .rectangle:hover, .small-square:hover {
+            transform: scale(1.05);
+            background-color:magenta; /* Darker background on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="lessons.html" class="big-square lessons">
+            <h2>lessons</h2>
+        </a>
+        <a href="practice-exams.html" class="big-square practice-exams">
+            <h2> practice-exams</h2>
+        </a>
+        <a href="qcm.html" class="rectangle">
+            <img src="pnnf.png" alt="QCM Image">
+            <h2>QCM</h2>
+        </a>
+        <a href="others.html" class="small-square">
+            <h2>others</h2>
+        </a>
+    </div>
+</body>
+</html>

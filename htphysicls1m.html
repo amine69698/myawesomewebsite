@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive PDF Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            margin-top: 60px;
+            padding: 20px;
+        }
+        .title-section {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .title-section:hover {
+            transform: scale(1.05);
+        }
+        .title-section h2 {
+            margin: 0;
+            color: #333;
+        }
+        .pdf-list {
+            display: none;
+            margin-top: 10px;
+        }
+        .pdf-list a {
+            display: block;
+            color: #007bff;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        .pdf-list a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interactive PDF Library</h1>
+    </header>
+
+    <div class="container">
+        <div class="title-section" onclick="togglePDFList('pdf-list-1')">
+            <h2>Category 1</h2>
+            <div class="pdf-list" id="pdf-list-1">
+                <a href="pdf1.pdf" target="_blank">PDF 1</a>
+                <a href="pdf2.pdf" target="_blank">PDF 2</a>
+                <a href="pdf3.pdf" target="_blank">PDF 3</a>
+            </div>
+        </div>
+
+        <div class="title-section" onclick="togglePDFList('pdf-list-2')">
+            <h2>Category 2</h2>
+            <div class="pdf-list" id="pdf-list-2">
+                <a href="pdf4.pdf" target="_blank">PDF 4</a>
+                <a href="pdf5.pdf" target="_blank">PDF 5</a>
+                <a href="pdf6.pdf" target="_blank">PDF 6</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function togglePDFList(id) {
+            var list = document.getElementById(id);
+            if (list.style.display === "block") {
+                list.style.display = "none";
+            } else {
+                list.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

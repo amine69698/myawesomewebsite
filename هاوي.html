@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #00CED1, #ADFF2F);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            animation: backgroundFade 5s infinite alternate;
+        }
+        @keyframes backgroundFade {
+            from {
+                background: linear-gradient(45deg, #00CED1, #ADFF2F);
+            }
+            to {
+                background: linear-gradient(45deg, #FF6347, #FFD700);
+            }
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .circle:hover {
+            transform: scale(1.1);
+        }
+        .francais {
+            background-color: #8A2BE2; /* Blue-violet */
+            animation: pulse 2s infinite;
+        }
+        .tarbiyah {
+            background-color: #EE82EE; /* Violet */
+            animation: pulse 2.5s infinite;
+        }
+        .lughal {
+            background-color: #FF1493; /* Red-violet */
+            animation: pulse 3s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="francais4.html" class="circle francais">Français</a>
+        <a href="tarbiyah4.html" class="circle tarbiyah">التربية الإسلامية</a>
+        <a href="lughal4.html" class="circle lughal">اللغة العربية</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM-[PC]</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .container {
+            margin-top: 80px;
+            padding: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .title-section {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .title-section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .title-section h2 {
+            margin: 0;
+            color: #4CAF50;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4CAF50;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+        .title-section h2:hover {
+            color: #388E3C;
+        }
+        .pdf-list {
+            display: none;
+            margin-top: 10px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .pdf-list a {
+            display: block;
+            color: #4CAF50;
+            text-decoration: none;
+            margin: 5px 0;
+            padding: 5px 0;
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.3s ease;
+        }
+        .pdf-list a:hover {
+            text-decoration: underline;
+            background-color: #f0f0f0;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>QCM-[PC]</h1>
+    </header>
+
+    <div class="container">
+        <div class="title-section" onclick="togglePDFList('pdf-list-1')">
+            <h2>SEMESTRE N°1</h2>
+            <div class="pdf-list" id="pdf-list-1">
+                <a href="pdf2.pdf" target="_blank">Travail et puissance d'une force</a>
+                <a href="pdf3.pdf" target="_blank">Importance de la mesure en chimie</a>
+                <a href="pdf4.pdf" target="_blank">Grandeurs physiques liées à la quantité de matière</a>
+                <a href="pdf5.pdf" target="_blank">Solutions électrolytiques et concentrations</a>
+                <a href="pdf6.pdf" target="_blank">Travail et énergie cinétique</a>
+                <a href="pdf7.pdf" target="_blank">Travail et énergie potentielle de pesanteur - Énergie mécanique</a>
+                <a href="pdf8.pdf" target="_blank">Suivi d'une transformation chimique</a>
+                <a href="pdf9.pdf" target="_blank">Mesure des quantités de matière en solution par conductimétrie</a>
+                <a href="pdf10.pdf" target="_blank">Travail et énergie interne (Sciences Maths)</a>
+                <a href="pdf11.pdf" target="_blank">Énergie thermique et transfert thermique (Sciences Maths)</a>
+            </div>
+        </div>
+
+        <div class="title-section" onclick="togglePDFList('pdf-list-2')">
+            <h2>SEMESTRE N°2</h2>
+            <div class="pdf-list" id="pdf-list-2">
+                <a href="pdf12.pdf" target="_blank">Transfert d'énergie dans un circuit électrique</a>
+                <a href="pdf13.pdf" target="_blank">Comportement global d'un circuit électrique</a>
+                <a href="pdf14.pdf" target="_blank">Expansion de la chimie organique</a>
+                <a href="pdf15.pdf" target="_blank">Les molécules organiques et les squelettes carbonés</a>
+                <a href="pdf16.pdf" target="_blank">Le champ magnétique</a>
+                <a href="pdf17.pdf" target="_blank">Le champ magnétique créé par un courant électrique</a>
+                <a href="pdf18.pdf" target="_blank">Les forces électromagnétiques - La loi de Laplace</a>
+                <a href="pdf19.pdf" target="_blank">Modification du squelette carboné</a>
+                <a href="pdf20.pdf" target="_blank">Les groupes caractéristiques en chimie organique</a>
+                <a href="pdf21.pdf" target="_blank">La réactivité des alcools</a>
+                <a href="pdf22.pdf" target="_blank">Visibilité d'un objet</a>
+                <a href="pdf23.pdf" target="_blank">Les images formées par un miroir plan</a>
+                <a href="pdf24.pdf" target="_blank">Les images formées par une lentille mince convergente</a>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <script>
+        function togglePDFList(id) {
+            var list = document.getElementById(id);
+            list.style.display = (list.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

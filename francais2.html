@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examens de Pratique</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #4CAF50, #FF5722);
+            margin: 0;
+            overflow: hidden;
+            animation: backgroundAnimation 5s infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background: linear-gradient(45deg, #4CAF50, #FF5722); }
+            100% { background: linear-gradient(45deg, #FF5722, #4CAF50); }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 80%;
+        }
+
+        .semester {
+            background-color: rgba(128, 128, 128, 0.8);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .semester:hover {
+            transform: scale(1.05);
+        }
+
+        .semester h2 {
+            margin: 0;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .exams {
+            margin-top: 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .exams a {
+            display: block;
+            margin: 15px 0;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            font-size: 20px;
+        }
+
+        .exams a:hover {
+            color: #FF5722;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="semester" id="semester1">
+            <h2>Semestre 1</h2>
+            <div class="exams" id="exams1">
+                <a href="examen10.html">Examen 1</a>
+                <a href="examen20.html">Examen 2</a>
+                <a href="examen30.html">Examen 3</a>
+                
+            </div>
+        </div>
+        <div class="semester" id="semester2">
+            <h2>Semestre 2</h2>
+            <div class="exams" id="exams2">
+                <a href="examen11.html">Examen 1</a>
+                <a href="examen21.html">Examen 2</a>
+                <a href="examen31.html">Examen 3</a>
+                <a href="examen41.html">Examen 4</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("semester1").addEventListener("click", function() {
+            let exams = document.getElementById("exams1");
+            if (exams.style.maxHeight) {
+                exams.style.maxHeight = null;
+            } else {
+                exams.style.maxHeight = exams.scrollHeight + "px";
+            }
+        });
+
+        document.getElementById("semester2").addEventListener("click", function() {
+            let exams = document.getElementById("exams2");
+            if (exams.style.maxHeight) {
+                exams.style.maxHeight = null;
+            } else {
+                exams.style.maxHeight = exams.scrollHeight + "px";
+            }
+        });
+    </script>
+</body>
+</html>

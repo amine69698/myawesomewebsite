@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملخصات مادة الرياضيات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #6200ea;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .container {
+            margin-top: 100px;
+            padding: 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .title-section {
+            background-color: #ffffff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+        .title-section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            background-color: #f1f3f4;
+        }
+        .title-section h2 {
+            margin: 0;
+            color: #6200ea;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #6200ea;
+            display: inline-block;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .pdf-list {
+            display: none;
+            margin-top: 10px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .pdf-list a {
+            display: block;
+            color: #6200ea;
+            text-decoration: none;
+            margin: 5px 0;
+            padding: 5px 0;
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .pdf-list a:hover {
+            text-decoration: underline;
+            background-color: #e8eaf6;
+            color: #311b92;
+        }
+        footer {
+            background-color: #6200ea;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ملخصات مادة الرياضيات</h1>
+    </header>
+
+    <div class="container">
+        <div class="title-section" onclick="togglePDFList('pdf-list-1')">
+            <h2>SEMESTRE N°1</h2>
+            <div class="pdf-list" id="pdf-list-1">
+                <a href="pdf1.pdf" target="_blank">Notions de logique</a>
+                <a href="pdf2.pdf" target="_blank">Généralités sur les fonctions</a>
+                <a href="pdf3.pdf" target="_blank">Le barycentre dans le plan</a>
+                <a href="pdf4.pdf" target="_blank">Le produit scalaire et ses applications</a>
+                <a href="pdf5.pdf" target="_blank">Les suites numériques</a>
+                <a href="pdf6.pdf" target="_blank">Calcul trigonométrique</a>
+            </div>
+        </div>
+
+        <div class="title-section" onclick="togglePDFList('pdf-list-2')">
+            <h2>SEMESTRE N°2</h2>
+            <div class="pdf-list" id="pdf-list-2">
+                <a href="pdf7.pdf" target="_blank">La rotation dans le plan</a>
+                <a href="pdf8.pdf" target="_blank">Les limites d’une fonction numérique</a>
+                <a href="pdf9.pdf" target="_blank">La dérivation d’une fonction numérique</a>
+                <a href="pdf10.pdf" target="_blank">Représentation graphique d’une fonction</a>
+                <a href="pdf11.pdf" target="_blank">Vecteurs de l’espace</a>
+                <a href="pdf12.pdf" target="_blank">Géométrie dans l’espace</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ملخصات مادة الرياضيات. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        function togglePDFList(id) {
+            var list = document.getElementById(id);
+            list.style.display = (list.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
+
